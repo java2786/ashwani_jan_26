@@ -9,6 +9,7 @@ sudo systemctl stop nginx
 delete all file from - /usr/share/nginx/html/
 sudo rm -rf /usr/share/nginx/html/*
 
+sudo yum install git -y
 sudo git clone https://github.com/arun2786/demo-web-app-ashwini-del.git
 
 sudo cp -r demo-web-app-ashwini-del/* /usr/share/nginx/html/
