@@ -1,0 +1,20 @@
+GET http://localhost:5000
+###
+GET http://localhost:5000/home.html
+###
+GET http://localhost:5000/users		
+###
+GET http://localhost:5000/users/demo	
+###
+POST http://localhost:5000/users		
+content-type: application/json
+
+{"name": "demo", "password": "demo"}
+###
+DELETE http://localhost:5000/users/2
+###
+PUT http://localhost:5000/users/1
+content-type: application/json
+
+{"name": "user", "password": "user@123"}
+###
