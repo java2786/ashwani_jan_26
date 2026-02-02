@@ -4,10 +4,10 @@
 - nvm install 20
 
 ### Download node-express project
-- git clone https://java_kumar_arun@bitbucket.org/brain-mentor/node-web-app-in-in-aws-ec2-linux.git
+- git clone https://github.com/java2786/ashwani_jan_26.git
 
 ### Create project environment
-- cd node-web-app-in-in-aws-ec2-linux
+- cd ashwani_jan_26/projects/node-web-app-in-in-aws-ec2-linux
 - npm i
 - npm run start
 

@@ -7,10 +7,10 @@
 
 
 ### Download python project
-- git clone https://java_kumar_arun@bitbucket.org/brain-mentor/python-in-aws-ec2-ubuntu.git
+- git clone https://github.com/java2786/ashwani_jan_26.git
 
 ### Create project environment
-- cd python-in-aws-ec2-ubuntu
+- cd ashwani_jan_26/projects/python-in-aws-ec2-ubuntu
 - python3 -m venv my_env
 - source my_env/bin/activate
 - cd python_project
