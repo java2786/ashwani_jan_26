@@ -45,9 +45,13 @@
         <h2>Version 1.0</h2>
         <div class="info">
             <h3>Deployment Successful</h3>
-            <p>Hostname: $(hostname)</p>
+            <p id="hostname">Hostname: </p>
         </div>
     </div>
+
+    <script>
+        document.getElementById("hostname").innerHTML += window.location.hostname;
+    </script>
 </body>
 
 </html>
