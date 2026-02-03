@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>CI/CD Demo</title>
+    <title>EC2 template</title>
     <style>
         body {
             background: rgba(255, 255, 255, 0.1);
@@ -41,14 +41,11 @@
 
 <body>
     <div class="container">
-        <h1>CI/CD Pipeline Success!</h1>
+        <h1>Launch Success!</h1>
         <h2>Version 1.0</h2>
         <div class="info">
             <h3>Deployment Successful</h3>
-            <p>This Node.js app was automatically deployed via:</p>
-            <p><strong>GitHub → CodePipeline → CodeBuild → CodeDeploy → EC2</strong></p>
-            <p>Hostname: ${require('os').hostname()}</p>
-            <p>Deployed at: ${new Date().toLocaleString()}</p>
+            <p>Hostname: $(hostname)</p>
         </div>
     </div>
 </body>
