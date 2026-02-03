@@ -1,1 +1,56 @@
-<h1>My App</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CI/CD Demo</title>
+    <style>
+        body {
+            background: rgba(255, 255, 255, 0.1);
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        .container {
+            background: gray;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        .info {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CI/CD Pipeline Success!</h1>
+        <h2>Version 1.0</h2>
+        <div class="info">
+            <h3>Deployment Successful</h3>
+            <p>This Node.js app was automatically deployed via:</p>
+            <p><strong>GitHub → CodePipeline → CodeBuild → CodeDeploy → EC2</strong></p>
+            <p>Hostname: ${require('os').hostname()}</p>
+            <p>Deployed at: ${new Date().toLocaleString()}</p>
+        </div>
+    </div>
+</body>
+
+</html>

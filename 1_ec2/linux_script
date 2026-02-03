@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# update the system
+sudo yum update -y
+
+# Install Git and Nginx
+sudo yum install git -y
+sudo yum install nginx -y
+
+# Remove default nginx files to deploy
+sudo rm -rf /usr/share/nginx/html/*
+
+# Clone and copy website code
+sudo git clone https://github.com/java2786/ashwani_jan_26
+sudo cp -r ashwani_jan_26/e-com/* /usr/share/nginx/html/
+
+sudo systemctl enable nginx
+sudo systemctl start nginx
